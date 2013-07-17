@@ -1,7 +1,7 @@
 Changelog
 =========
 
-'0.1' - Unreleased
----------------------
+0.1 (2013-07-17)
+----------------
 
- - Initial package generated using inigo.templer
+ - Initial package with Press Release content type
