@@ -1,8 +1,5 @@
 README for sinarngo.pressroom
-==========================================
-
-This is a rewrite, of the original Products.PressRoom,
-in dexterity. https://pypi.python.org/pypi/Products.PressRoom
+=============================
 
 Press Room is a simple add-on product which can be used to easily manage
 an online Press Room within your Plone site.  It adds 4 new content
@@ -104,3 +101,11 @@ Press Room provides a master "Press Room" view showing a configurable number
 of Releases, Clips and Contacts (any of which can also be hidden).
 
 Press Room also makes available RSS feeds of Press Releases and Press Clips.
+
+Credits
+=======
+
+This is a rewrite, of the original Products.PressRoom,
+in dexterity. https://pypi.python.org/pypi/Products.PressRoom
+
+Developed with funding support by Internews www.internews.org
