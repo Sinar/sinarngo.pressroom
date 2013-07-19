@@ -19,6 +19,8 @@ from z3c.relationfield.schema import RelationList, RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 from plone.multilingualbehavior.directives import languageindependent
 
+from collective import dexteritytextindexer
+
 from sinarngo.pressroom import MessageFactory as _
 
 
@@ -28,22 +30,26 @@ class IPressRelease(form.Schema, IImageScaleTraversable):
     """
     Press Release
     """
+    dexteritytextindexer.searchable('title')
     title = schema.TextLine(title=u'Headline', 
                          )
-
+    dexteritytextindexer.searchable('subtitle')
     subtitle = schema.TextLine(title=u'Subheadline', 
                          required=False)
 
+    dexteritytextindexer.searchable('description')
     description = schema.Text(title=u'Description',
                                   description=u'Brief description '
                                   'of Press Release. Used in listings.',
                                   required=False,
                                   )
-
+    dexteritytextindexer.searchable('location')
     location = schema.TextLine(title=u'Location', 
                          description=u'eg. Town, Country',
                          )
 
+
+    dexteritytextindexer.searchable('press_release')
     press_release = RichText(
                 title=_(u"Press release content"),
                 required=False,
